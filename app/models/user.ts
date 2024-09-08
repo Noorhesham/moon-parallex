@@ -1,5 +1,4 @@
 import mongoose, { Schema } from "mongoose";
-import Link from "./linkModel"; // Importing Link model to avoid circular dependency issues
 
 const CoverImageSchema = new Schema(
   {

@@ -85,7 +85,7 @@ const ParallexScroll = () => {
         initial={{ opacity: 0, y: 200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="absolute left-1/2 top-20 -translate-x-1/2 aspect-square w-80"
+        className="absolute left-1/2 top-20 -translate-x-1/2 aspect-square  w-80 xl:w-80"
         style={{ y: moonY }}
       >
         <Image src={"/مشروع جديد (16).png"} fill alt="moon" className="object-cover" />
@@ -95,7 +95,7 @@ const ParallexScroll = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="absolute z-10 bottom-0 w-full h-96"
+        className="absolute z-10 bottom-0 w-full h-96 "
         style={{ y: groundY }}
       >
         <Image src={"/bottom.png"} fill alt="desert" className="object-cover" />
@@ -105,7 +105,7 @@ const ParallexScroll = () => {
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: -100 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="absolute z-0 -left-10 -bottom-10 w-[31rem] h-full"
+        className="absolute z-0 -left-10 bottom-20  w-[31rem] aspect-square"
         style={{ x: mountainsX }}
       >
         <Image src={"/left.png"} fill alt="mountains" className="object-contain" />

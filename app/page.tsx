@@ -5,12 +5,13 @@ import CardInfo from "./components/CardInfo";
 import { SiAzuredataexplorer, SiGoogleanalytics, SiMicrosoftteams, SiHive } from "react-icons/si";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import ContainerMotion from "./components/ContainerMotion";
+import TypeAnimation from "./components/TypeAnimation";
 
 export default function Home() {
   return (
     <main className=" h-full">
       <ParallexScroll />
-      <MaxWidthWrapper className=" overflow-hidden z-30 relative min-h-screen">
+      <MaxWidthWrapper className=" overflow-hidden z-30 relative ">
         <ContainerMotion className=" flex   justify-center items-stretch gap-10">
           <CardInfo
             title="EXPLORE"
@@ -42,10 +43,8 @@ export default function Home() {
           />
         </ContainerMotion>
       </MaxWidthWrapper>
-      <MaxWidthWrapper className="flex ">
-        <div className=" flex-1"></div>
-        <div className=" flex-1"></div>
-      </MaxWidthWrapper>
+
+      {/* <TypeAnimation/> */}
     </main>
   );
 }

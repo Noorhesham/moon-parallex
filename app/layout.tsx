@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.className} dark  overflow-x-hidden`}>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
       </body>
     </html>
