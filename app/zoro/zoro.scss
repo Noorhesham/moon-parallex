@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("/font.otf") format("opentype"); /* Ensure this path is correct */
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 11vw;
+  font-weight: 600;
+  line-height: 90%;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "CustomFont", sans-serif !important;
+}
+.footer {
+  h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+}
+p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+section {
+  width: 100vw;
+  min-height: 100vh;
+}
+.sticky1 {
+  position: relative;
+  perspective: 1000px;
+}
+.intro {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  z-index: 2;
+}
+.copy {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-75deg) scale(0.5);
+  transform-origin: bottom left;
+  display: none;
+  left: 50%;
+}
+.copy h1 {
+  font-size: 5vw;
+  text-align: center;
+}
+.custom-pagination {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  position: absolute;
+  left: 20%;
+  bottom: 0%;
+  width: 100%;
+  z-index: 10;
+}
+
+.custom-pagination img {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  filter: brightness(0.5);
+  object-fit: contain;
+}
+
+.custom-pagination img.swiper-pagination-bullet-active {
+}
+.active {
+  margin-top: -10px;
+
+  filter: brightness(1);
+}
+.non {
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  filter: brightness(0.5);
+  object-fit: contain;
+}

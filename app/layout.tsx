@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import NavBar from "./components/NavBar";
+import "locomotive-scroll/src/locomotive-scroll.scss";
+import { SmoothScrollProvider } from "./context/ScrollProviderContext";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -18,8 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.className} dark  overflow-x-hidden`}>
-        {/* <NavBar /> */}
-        {children}
+        {" "}
+        <SmoothScrollProvider>
+          <section className="main-container" data-scroll-container>
+            {children}{" "}
+          </section>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

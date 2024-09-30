@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-
+import "./goku.scss";
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 

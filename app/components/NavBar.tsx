@@ -12,11 +12,12 @@ import PhoneNav from "./PhoneNav";
 import { Button } from "@/components/ui/button";
 const links = [
   {
-    text: "ABOUT US",
+    text: "DESERT",
+    href: "/desert",
   },
   {
-    text: "Courses",
-    href: "/about-us",
+    text: "ANIME",
+    href: "/goku",
   },
 ];
 const NavBar = () => {
@@ -57,11 +58,6 @@ const NavBar = () => {
       >
         <MaxWidthWrapper noPadding>
           <div className="flex items-center justify-between  ">
-            <div className="flex  items-center">
-              <div className="flex w-full items-center   ">
-                <Logo />
-              </div>
-            </div>
             <div className="  flex items-center gap-8 ">
               <ul className=" hidden lg:flex z-30 relative items-center  gap-4 xl:gap-8 ">
                 {links.map((link) => (
@@ -78,7 +74,7 @@ const NavBar = () => {
               >
                 LOGIN
               </Button> */}
-              <Button className="  px-4 lg:px-8 rounded-full">GET STARTED</Button>
+              {/* <Button className="  px-4 lg:px-8 rounded-full">GET STARTED</Button> */}
             </div>
           </div>
         </MaxWidthWrapper>
